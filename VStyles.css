@@ -1,0 +1,394 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald|Kalam&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+ font-family: 'Montserrat', sans-serif;
+ margin:0;
+
+}
+/*-----------common styles-------*/
+
+img {
+    display:block;
+    width:100%;
+    max-width:100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin:0;
+}
+
+.container {
+    width:100%;
+    margin:auto;
+}
+
+.container--flex {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.column {
+  width:100%;
+}
+
+/*------Header-----*/
+
+.main-header {
+    width:100%;
+}
+
+.logo {
+    size: 50px;
+    padding: 10px;
+    width:50%;
+    
+    
+}
+.main-header__contactInfo__mail {
+    background: #ff914d;
+    color: white;
+    margin: auto;
+    padding:10px;
+    
+}
+.main-header [class*="icon-"]:before {
+    position: relative;
+    top: 2px;
+    right: 5px;
+}
+
+/*-------Menu------*/
+
+.main-nav{
+    width: 100%;
+    position:relative;
+    z-index:2000;
+    padding: 10px;
+}
+.icon-menu {
+    display:block;
+    color: white;
+    border:1px solid white;
+    border-radius:3px;
+    width:40px;
+    height:40px;
+    line-height:45px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: space-between;
+}
+.social-icon [class*="icon"] {
+    color: black;
+    margin-left:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius:50%;
+}
+
+.social-icon__link {
+    text-decoration: none;
+}
+
+
+.menu{
+    
+    position:absolute;
+    top:60px;
+    left:0;
+    width: 100%;
+    padding:0;
+    margin:0;
+    list-style: none;
+    background:rgba(0,0,0,0.85);
+    text-align: center;
+    height:0;
+    overflow: hidden;
+    transition: height .3s linear;
+
+}
+
+.menu__link {
+    display: block;
+    padding:15px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu__link:hover{
+    background: #2b591e;
+}
+.menu__link--select{
+    background: #2b591e;
+
+}
+.show {
+    height: 250px;
+}
+
+
+
+/*-------------Banner---------------*/
+
+.banner {
+    margin-top:-55px;
+    position: relative;
+}
+
+.banner::before {
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color:rgba(2, 44, 21, 0.336);
+    z-index:1000;
+    top:0;
+}
+
+.banner__img{
+    width:100%;
+    height:70%;
+    object-fit:cover;
+}
+.banner__content{
+    width:90%;
+    color:white;
+    text-align:center;
+    position: absolute;
+    z-index:1500;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-weight: bolder;
+    font-family: 'Kalam';
+    font-size: 2em;
+}
+
+/*-----grupos----*/
+
+.group--color .container {
+
+    background-image: linear-gradient(rgb(43, 155, 9), rgb(206, 193, 7));
+    color:white;
+    padding:10px;
+    text-align: center;
+}
+
+.main__title{
+    margin:15px;
+    font-size: 1.8em;
+    font-family: 'Oswald';
+    font-weight: bold;
+}
+
+.column__title{
+    font-size: 1.3em;
+}
+
+.main__about__description .column:nth-child(2){
+    padding:10px;
+    
+}
+.btn{
+    display:block;
+    text-align: center;
+    text-decoration: none;
+    width:120px;
+    background: #03989e;
+    color:white;
+    padding:10px;
+    margin:10px auto;
+    font-family: 'Oswald';
+    border-radius: 1.5em;
+}
+
+.group__title{
+    font-family: 'Kalam';
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.8em;
+    margin: 35px;
+    background-color: rgb(193, 7, 199);
+    color:white;
+    
+    
+}
+
+
+.starter-kit .column{
+    margin-bottom:30px;
+    text-align: center;
+}
+.starter-kit__img {
+    margin: auto;
+    max-width: 350px;
+}
+.starter-kit__title{
+    font-size: 1.5em;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: 'Oswald';
+}
+.starter-kit__quote{
+    font-size: 1.3em;
+    color:#de423a;
+    font-weight: bold;
+    font-family: 'Kalam';
+}
+
+/*---------Footer----*/
+
+.main-footer {
+    background-image: linear-gradient(rgb(245, 17, 169), rgb(255, 104, 4));
+    color:white;
+    padding:10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1em;
+}
+.copy{
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.main-footer [class*="icon-"]{
+    color: white;
+    text-decoration: none;
+}
+.main-footer [class*="icon-"]::before{
+    position: relative;
+    top:5px;
+    right:3px;
+}
+
+/*---Responsivo----*/
+
+@media screen and (min-width:480px) {
+    .main-nav{
+        background: rgba(0,0,0,0.85);
+    }
+    .banner{
+        margin-top: -1px;
+        z-index:-1000;
+    }
+   .banner__content{
+       font-size:8em;
+   }
+   .main{
+       padding-bottom:15px;
+   }
+
+.main__about__description .column:nth-child(2){
+padding-left:20px;
+font-size:.9em;
+}
+.main__about__description .btn{
+    margin:0;
+}
+.starter-kit .column{
+    border:5px solid rgb(185, 247, 176);
+    padding:5px;
+}
+.starter-kit__img{
+    height:200px;
+    object-fit:cover;
+}
+
+.column--50{
+    width:45%;
+}
+.column--50-25{
+    width:49%;
+}
+.column--33{
+    width:32%;
+}
+
+
+}
+@media screen and (min-width:768px){
+    .banner__content{
+        font-size:6em;
+    }
+    .main__title{
+        font-size:2.2em;
+    }
+    .main__about__description{
+        margin-top: 30px;
+    }
+    .main__about__description .column--50:nth-child(2){
+        font-size: 1em;
+    }
+    .main__about__description .column--50.column:nth-child(2)
+    .column__txt{
+        line-height: 30px;
+    }
+    .column--50-25{
+        width:24.5%;
+        
+    }
+    .column__title{
+        font-size: 1em;
+    }
+    .group__title{
+        font-size: 2.2em;
+    }
+    
+}
+@media screen and (min-width:1024px) {
+    
+    .main-nav{
+        padding:0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .banner__img{
+        height: 700px;
+    }
+    .banner__content{
+        font-size:6em;
+        color:rgb(255, 226, 61);
+    }
+    .icon-menu{
+        display:none;
+    }
+    .menu{
+        display:flex;
+        height:auto;
+        position:static;
+        width:auto;
+    }
+    .menu__link{
+        padding:20px;
+    }
+    .main__about__description .column:nth-child(1) img{
+        line-height: 50px;
+        padding-left: 25px;
+    }
+    .main__about__description .column:nth-child(2) .column__txt{
+    line-height: 50px;
+    padding-right:25px;
+    }
+    .starter-kit__img{
+    height: 300px;
+}
+
+}
+
