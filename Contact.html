@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title> ¿Por? | The Vegan Starter Kit</title>
+    <meta name="author" content="Ana Flores">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1.0, minimum-scale=1.0"/> 
+    <link rel="stylesheet" type="text/css" href="VStyles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="main-header">
+        <div class="container container--flex">
+            <div class="logo-container column--50">
+                <a src="Index VGN.html"><img class="logo" src="Imag proyecto/Captura de Pantalla 2020-02-26 a la(s) 23.10.12.png" /></a>
+            </div>
+        </div>
+    </header>
+    <nav class="main-nav">
+        <div class="nav-container container--flex">
+            <span class="icon-menu" id="btnmenu"></span>
+            <ul class="menu" id="Menu">
+                <li class="menu__item"><a href="Index VGN.html" class="menu__link ">Empieza</a></li>
+                <li class="menu__item"><a href="Why.html" class="menu__link">¿Por?</a></li>
+                <li class="menu__item"><a href="Veganizing.html" class="menu__link ">Veganizando</a></li>
+                <li class="menu__item"><a href="Doubts.html" class="menu__link">Dudas</a></li>
+                <li class="menu__item"><a href="#" class="menu__link menu__link--select">Contacto</a></li>
+            </ul>
+            <div class="social-icon">
+                <a href="" class="social-icon__link"><span class="icon-facebook"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-instagram"></span></a>
+            </div>
+        </div>  
+    </nav>
+    <section class="banner">
+        <img src="Imag proyecto/vaquita pasto.jpg" alt="" class="banner__img">
+        <div class="banner__content">Por algún lado se empieza</div>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="Index VGN.html">Empieza</a></li>
+                    <li class="breadcrumb-item active">Contacto</li>
+                </ol>       
+            </div>
+        </div>
+
+        <div class="row row-content">
+            <div class="col-12 ">
+                <h2>Tus comentarios son importantes </h2>
+                <hr />
+            </div>
+            <div class="col-md-10">
+                <form>
+                    <div class="form-group row">
+                        <label for="firstName" class="col-md-2 col-form-label ">Nombre</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="firstName" name="firstName"
+                                placeholder="Nombre" required />
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                        <label for="email" class="col-md-2 col-form-label">E-mail</label>
+                        <div class="col-md-10">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col offset-md-2">
+                            ¿Le podemos enviar información mensual?
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="contactYes" name="contactRadios"
+                                    value="yes" />
+                                <label for="contactYes" class="form-check-label">Sí</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="contactNo" name="contactRadios"
+                                    value="no" />
+                                <label for="contactNo" class="form-check-label">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="feedback" class="col-md-2 col-form-label">Comentarios</label>
+                        <div class="col-md-10">
+                            <textarea class="form-control" id="feedback" name="feedback" rows="8"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-2 col-md-10 ">
+                            <button class="bg-info" type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+
+
+
+        <footer class="main-footer">
+            <div class="container container--flex ">
+                <div class="column column--33">
+                    <h2 class="column__title">¡Anímate! todos ganamos</h2>
+                    <p class="column__txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere obcaecati
+                        quod, optio ducimus molestiae harum doloribus dicta excepturi expedita et. A libero tenetur
+                        voluptate ut vel doloremque et explicabo qui.</p>
+                </div>
+                <div class="column column--33">
+                    <h2 class="column__title">Sé parte del cambio</h2>
+                    <p class="column__txt"><a href="" class="icon-mail"></a>veganstarterkit@gmail.com</p>
+                </div>
+                <div class="column column--33">
+                    <h2 class="column__title">Síguenos, con confianza</h2>
+                    <p class="column__txt"><a href="" class="icon-facebook"></a>Facebook</p>
+                    <p class="column__txt"><a href="" class="icon-instagram"></a>Instagram</p>
+                </div>
+                <p class="copy">
+                    © The Vegan Starter Kit | Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    
+        <script src="jquery-3.4.1.min.js"></script>
+        <script src="popper.js/dist/umd/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="Vmenu.js"></script>
+    
+    </body>
+    </html>

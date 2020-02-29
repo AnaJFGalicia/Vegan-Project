@@ -132,14 +132,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu__link:hover{
-    background: #2b591e;
+    background: #7ddb01;
+    color:white;
 }
 .menu__link--select{
     background: #2b591e;
 
 }
 .show {
-    height: 250px;
+    height: 300px;
 }
 
 
@@ -222,10 +223,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Kalam';
     text-align: center;
     font-weight: 100;
-    font-size: 1.8em;
-    margin: 35px;
-    background-color: rgb(193, 7, 199);
-    color:white;
+    font-size: 2em;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    margin: 0px;
+    color:rgb(193, 7, 199);
     
     
 }
@@ -281,6 +283,7 @@ h1, h2, h3, h4, h5, h6 {
 /*---Responsivo----*/
 
 @media screen and (min-width:480px) {
+   
     .main-nav{
         background: rgba(0,0,0,0.85);
     }
@@ -289,7 +292,7 @@ h1, h2, h3, h4, h5, h6 {
         z-index:-1000;
     }
    .banner__content{
-       font-size:8em;
+       font-size:2em;
    }
    .main{
        padding-bottom:15px;
@@ -325,7 +328,7 @@ font-size:.9em;
 }
 @media screen and (min-width:768px){
     .banner__content{
-        font-size:6em;
+        font-size:-.8em;
     }
     .main__title{
         font-size:2.2em;
@@ -350,6 +353,10 @@ font-size:.9em;
     .group__title{
         font-size: 2.2em;
     }
+    .column--33{
+        width:24.5%;
+    }
+    
     
 }
 @media screen and (min-width:1024px) {
@@ -381,6 +388,7 @@ font-size:.9em;
     .main__about__description .column:nth-child(1) img{
         line-height: 50px;
         padding-left: 25px;
+        padding-bottom: 25px;
     }
     .main__about__description .column:nth-child(2) .column__txt{
     line-height: 50px;
@@ -388,6 +396,9 @@ font-size:.9em;
     }
     .starter-kit__img{
     height: 300px;
+}
+.column--33{
+    width:24.5%;
 }
 
 }
